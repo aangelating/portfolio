@@ -49,6 +49,19 @@ ul {
     font-size: 12px;
 }
 
+body {
+    min-height: 100vh;
+    min-height: 100dvh;          /* altura real en móvil, descontando la barra de Safari */
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg);
+}
+
+main {
+    flex: 1;
+}
+
+
 /*===================HEADER=================================*/
 
 .header {
@@ -300,6 +313,7 @@ h1 {
     }
 
 }
+
 
 
 /* ==========================================

@@ -42,6 +42,21 @@ a{
     max-width: 1040px;
     margin: 0 auto;
 }
+
+
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;          /* altura real en móvil, descontando la barra de Safari */
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg);
+}
+
+main {
+    flex: 1;
+}
+
 /*===================HEADER=================================*/
 
 .header {
@@ -211,23 +226,14 @@ h4 {
     justify-content: end;
 }
 
-
 /* ==========================================
    RESPONSIVE - TABLETS
 ========================================== */
 
-@media screen and (max-width: 768px) {
-
-    .block {
-        width: 100%;
-    }
-
-    .header_menu {
-        gap: 35px;
-    }
+@media screen and (min-width: 481px) and (max-width: 1024px) {
 
     .home {
-        padding: 30px 20px;
+        padding: 40px 30px;
     }
 
     .home_block {
@@ -235,37 +241,56 @@ h4 {
         margin-bottom: 30px;
     }
 
-    .home_logo_black {
-        width: 300px;
-        margin-left: -20px;
-        margin-bottom: -25px;
+    .home_texto_imagenes {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
     }
 
-    .home_frontend {
-        font-size: 38px;
-        gap: 5px;
+    .home_img_text {
+        width: 100%;
+        max-width: 560px;
+    }
+
+    .home_logo_black {
+        width: min(65%, 360px);
+        margin-left: 0;
+        margin-bottom: -15px;
     }
 
     .home_webdesign {
-        font-size: 24px;
+        font-size: 30px;
+    }
+
+    .home_frontend {
+        font-size: clamp(48px, 9vw, 72px);
+        flex-wrap: wrap;
+    }
+
+    .home_frontend h1 {
+        font-size: inherit;
     }
 
     .home_2D {
-        font-size: 16px;
-        gap: 8px;
+        font-size: 22px;
+        flex-wrap: wrap;
     }
 
     .home_imag {
-        width: 220px;
-        margin-left: -80px;
+        position: relative;
+        width: min(45%, 320px);
+        margin: 30px auto 20px;
+        left: auto;
+        right: auto;
     }
 
     .home_img_angela {
-        width: 115px;
+        position: absolute;
+        width: 53%;
         left: auto;
-        right: -5px;
+        right: -10px;
+        bottom: -10px;
     }
-
 }
 
 
