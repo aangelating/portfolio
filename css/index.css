@@ -47,6 +47,8 @@ a{
 .header {
     padding: var(--space-md);
     background-color: var(--color-bg);
+    position: relative;
+    z-index: 100;
 
 }
 .header_block{
