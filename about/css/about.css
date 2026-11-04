@@ -235,7 +235,6 @@ h1 {
     justify-content: end;
 }
 
-
 /* ==========================================
    RESPONSIVE - TABLETS
 ========================================== */
@@ -250,44 +249,54 @@ h1 {
         gap: 35px;
     }
 
-    .home {
+    .about {
         padding: 30px 20px;
     }
 
-    .home_block {
+    .about_text_up {
+        padding: 10px;
         margin-top: 0;
-        margin-bottom: 30px;
     }
 
-    .home_logo_black {
-        width: 300px;
-        margin-left: -20px;
-        margin-bottom: -25px;
+    h1 {
+        font-size: 40px;
     }
 
-    .home_frontend {
-        font-size: 38px;
-        gap: 5px;
+    .logo_blue {
+        max-width: 220px;
     }
 
-    .home_webdesign {
-        font-size: 24px;
+    .about_text_p {
+        margin-top: 0;
     }
 
-    .home_2D {
-        font-size: 16px;
-        gap: 8px;
+    .intro {
+        font-size: clamp(20px, 4.5vw, 30px);
     }
 
-    .home_imag {
-        width: 220px;
-        margin-left: -80px;
+    /* Texto arriba, foto debajo */
+    .about_contents {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 20px;
     }
 
-    .home_img_angela {
-        width: 115px;
-        left: auto;
-        right: -5px;
+    .about_contents_text {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .about_contents_p,
+    .about_imgs_programs,
+    .about_contents_links {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .imag_angela {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
     }
 
 }
@@ -315,85 +324,70 @@ h1 {
     }
 
 
-    /* HOME */
+    /* ABOUT */
 
-    .home {
-        padding: 35px 20px;
+    .about {
+        padding: 25px 20px;
     }
 
-    .home_block {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .about_text_up {
+        padding: 0;
         margin-top: 0;
-        margin-bottom: 20px;
     }
 
-    .home_texto_imagenes {
-        width: 100%;
+    /* "Hello, I'm" y el logo azul, uno debajo del otro */
+    .about_text_title {
         flex-direction: column;
         align-items: center;
+        gap: 0;
     }
 
-    .home_img_text {
-        width: 100%;
+    h1 {
+        font-size: 34px;
     }
 
-    .home_logo_black {
-        width: min(85%, 280px);
-        margin-left: 0;
-        margin-bottom: -15px;
+    .logo_blue {
+        max-width: 200px;
+        margin-top: -5px;
     }
 
-    .home_text {
-        width: 100%;
+    .about_text_p {
+        margin-top: 15px;
     }
 
-    .home_webdesign {
-        font-size: 23px;
-        gap: 8px;
+    .intro {
+        font-size: clamp(20px, 6vw, 26px);
+        line-height: 1.35;
     }
 
-    .home_frontend {
-        font-size: clamp(34px, 10vw, 48px);
-        gap: 4px;
-        margin-top: -8px;
-        flex-wrap: wrap;
+    .about_contents {
+        margin-top: 10px;
+        gap: 25px;
     }
 
-    .home_frontend h1 {
-        font-size: inherit;
+    .about_contents_text {
+        padding: 10px 0;
+        gap: 15px;
     }
 
-    .home_2D {
+    .about_contents_p {
         font-size: 14px;
-        gap: 8px;
-        margin-top: 0;
+        text-align: left;   /* el justificado deja huecos grandes en pantallas estrechas */
+    }
+
+    .about_imgs_programs {
         flex-wrap: wrap;
+        gap: 15px;
     }
 
-    h4 {
-        font-size: 13px;
-        margin-bottom: 10px;
+    .about_contents_links {
+        margin-top: 10px;
     }
 
-
-    /* POST-IT Y FOTOGRAFÍA */
-
-    .home_imag {
-        position: relative;
-        width: min(65%, 220px);
-        margin: 35px auto 20px;
-        left: auto;
-        right: auto;
-    }
-
-    .home_img_angela {
-        position: absolute;
-        width: 53%;
-        left: auto;
-        right: -10px;
-        bottom: -10px;
+    .imag_angela {
+        width: 85%;
+        max-width: 320px;
+        height: auto;
     }
 
 

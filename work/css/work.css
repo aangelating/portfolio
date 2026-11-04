@@ -216,7 +216,6 @@ h6{
     justify-content: end;
 }
 
-
 /* ==========================================
    RESPONSIVE - TABLETS
 ========================================== */
@@ -231,44 +230,56 @@ h6{
         gap: 35px;
     }
 
-    .home {
+    .works {
         padding: 30px 20px;
     }
 
-    .home_block {
-        margin-top: 0;
-        margin-bottom: 30px;
+    h1 {
+        font-size: 44px;
     }
 
-    .home_logo_black {
-        width: 300px;
-        margin-left: -20px;
-        margin-bottom: -25px;
+    /* Cada sección: título arriba, trabajos debajo */
+    .works_contents_front,
+    .works_contents_demoreel,
+    .works_contents_ilustration {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 30px;
     }
 
-    .home_frontend {
-        font-size: 38px;
-        gap: 5px;
+    .works_content_front,
+    .works_content_demoreel,
+    .works_content_ilustration {
+        width: 100%;
+        gap: 20px;
     }
 
-    .home_webdesign {
-        font-size: 24px;
+    /* Las imágenes se reparten el ancho disponible */
+    .works__front,
+    .works__ilustration {
+        flex: 1;
+        min-width: 0;
     }
 
-    .home_2D {
-        font-size: 16px;
-        gap: 8px;
+    .coffe,
+    .Portfolio,
+    .forma,
+    .tulips,
+    .tulipan_morado,
+    .cake {
+        max-width: 100%;
     }
 
-    .home_imag {
-        width: 220px;
-        margin-left: -80px;
+    /* Vídeo: ocupa todo el ancho, sin desbordar */
+    .works__demoreel {
+        width: 100%;
+        min-width: 0;
     }
 
-    .home_img_angela {
-        width: 115px;
-        left: auto;
-        right: -5px;
+    .video_portfolio {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
 
 }
@@ -296,85 +307,41 @@ h6{
     }
 
 
-    /* HOME */
+    /* WORK */
 
-    .home {
-        padding: 35px 20px;
+    .works {
+        padding: 25px 20px;
     }
 
-    .home_block {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 0;
-        margin-bottom: 20px;
+    h1 {
+        font-size: 38px;
     }
 
-    .home_texto_imagenes {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
+    h2 {
+        font-size: 18px;
+        margin-top: 15px;
     }
 
-    .home_img_text {
-        width: 100%;
+    h6 {
+        font-size: 12px;
     }
 
-    .home_logo_black {
-        width: min(85%, 280px);
-        margin-left: 0;
-        margin-bottom: -15px;
+    .works_contents_front,
+    .works_contents_demoreel,
+    .works_contents_ilustration {
+        margin-top: 25px;
     }
 
-    .home_text {
-        width: 100%;
+    .works_content_front,
+    .works_content_demoreel,
+    .works_content_ilustration {
+        gap: 12px;
+        margin-top: 10px;
     }
 
-    .home_webdesign {
-        font-size: 23px;
+    .works__front,
+    .works__ilustration {
         gap: 8px;
-    }
-
-    .home_frontend {
-        font-size: clamp(34px, 10vw, 48px);
-        gap: 4px;
-        margin-top: -8px;
-        flex-wrap: wrap;
-    }
-
-    .home_frontend h1 {
-        font-size: inherit;
-    }
-
-    .home_2D {
-        font-size: 14px;
-        gap: 8px;
-        margin-top: 0;
-        flex-wrap: wrap;
-    }
-
-    h4 {
-        font-size: 13px;
-        margin-bottom: 10px;
-    }
-
-
-    /* POST-IT Y FOTOGRAFÍA */
-
-    .home_imag {
-        position: relative;
-        width: min(65%, 220px);
-        margin: 35px auto 20px;
-        left: auto;
-        right: auto;
-    }
-
-    .home_img_angela {
-        position: absolute;
-        width: 53%;
-        left: auto;
-        right: -10px;
-        bottom: -10px;
     }
 
 

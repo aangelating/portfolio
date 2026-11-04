@@ -59,6 +59,7 @@ a{
 
 .header_logo{
      max-width: 190px;
+    
 }
 
 .header_menu{
@@ -161,7 +162,8 @@ h4 {
 
 }
 .home_imag_posit{
-     position: relative;
+     position:static;
+     
      
 }
 
