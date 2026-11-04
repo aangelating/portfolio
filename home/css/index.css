@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+
+
+:root {
+    /** Colores **/
+    --color-blue: #0D00FF;
+    --color-bg: #F5F5F5;
+    --color-white: #FFFFFF; 
+    --color-text: black;
+
+    /** Space **/
+    --space-xxs: 8px;
+    --space-xs: 16px;
+    --space-md: 24px;
+    --space-lg: 32px;
+    --space-xl: 48px;
+    --space-xxl: 70px;
+    --space-xxxl: 90px;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.block {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+/*===================HEADER=================================*/
+
+.header {
+    padding: var(--space-md);
+    background-color: var(--color-bg);
+
+}
+.header_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_logo{
+     max-width: 190px;
+}
+
+.header_menu{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    gap: var(--space-xxl);
+    color: var(--color-blue);
+    font-weight: bold;
+}
+.link_menu{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+/*===================Home=================================*/
+
+.home {
+    padding: var(--space-lg);
+    background-color: var(--color-bg);
+
+}
+.home_block{
+    display: flex; 
+    align-items: end;
+    margin-top: -40px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.home_texto_imagenes {
+    display: flex;
+    justify-content: center;
+}
+.home_img_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+   
+}
+.home_logo_black{
+    display: flex;
+    width: 400px;
+    margin-left: -50px;
+    margin-bottom: -46px;
+    
+}
+.home_text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.web {
+    color: #0D00FF;
+ }
+
+.home_webdesign{
+    display: flex;
+    font-size: 30px;
+    gap: 12px;
+}
+.home_frontend{
+   
+    font-size: 50px;
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    margin-top: -25px;
+    
+}
+h1 {
+    color: #0D00FF;
+}
+h4 {
+    font-size: 20px;
+    margin-bottom: 19px;
+}
+.home_2D{
+    display: flex;
+    align-items: end;
+    gap: 12px;
+    font-size: 20px;
+    margin-top: -15px;
+    
+}
+.dos{
+     color: #0D00FF;
+}
+
+.home_imag{
+    position: relative;
+    width: 300px;
+    display: flex;
+    align-items: end;
+    margin-left: -130px;
+
+}
+.home_imag_posit{
+     position: relative;
+     
+}
+
+.home_img_angela{
+   width: 160px;
+    position: absolute;
+    z-index: 2;
+    left: 140px;
+}
+
+/*===================FOOTER=================================*/
+.footer {
+    padding:48px;
+    background-color: var(--color-blue);
+}
+.footer_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_logo_white{
+    display: flex;
+    width: 100px;   
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer_foot_first_r{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    gap: 20px;
+    font-size: 10px;
+    color: #FFFFFF;
+    align-items: end;
+
+}
+.link_mail{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    font-size: 10px;
+    color: #FFFFFF;
+    justify-content: end;
+}
+
+
+/* ==========================================
+   RESPONSIVE - TABLETS
+========================================== */
+
+@media screen and (max-width: 768px) {
+
+    .block {
+        width: 100%;
+    }
+
+    .header_menu {
+        gap: 35px;
+    }
+
+    .home {
+        padding: 30px 20px;
+    }
+
+    .home_block {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .home_logo_black {
+        width: 300px;
+        margin-left: -20px;
+        margin-bottom: -25px;
+    }
+
+    .home_frontend {
+        font-size: 38px;
+        gap: 5px;
+    }
+
+    .home_webdesign {
+        font-size: 24px;
+    }
+
+    .home_2D {
+        font-size: 16px;
+        gap: 8px;
+    }
+
+    .home_imag {
+        width: 220px;
+        margin-left: -80px;
+    }
+
+    .home_img_angela {
+        width: 115px;
+        left: auto;
+        right: -5px;
+    }
+
+}
+
+
+/* ==========================================
+   RESPONSIVE - MÓVILES
+========================================== */
+
+@media screen and (max-width: 480px) {
+
+    /* HEADER */
+
+    .header {
+        padding: 20px 15px;
+    }
+
+    .header_logo {
+        max-width: 145px;
+    }
+
+    .header_menu {
+        gap: 25px;
+        font-size: 14px;
+    }
+
+
+    /* HOME */
+
+    .home {
+        padding: 35px 20px;
+    }
+
+    .home_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .home_texto_imagenes {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home_img_text {
+        width: 100%;
+    }
+
+    .home_logo_black {
+        width: min(85%, 280px);
+        margin-left: 0;
+        margin-bottom: -15px;
+    }
+
+    .home_text {
+        width: 100%;
+    }
+
+    .home_webdesign {
+        font-size: 23px;
+        gap: 8px;
+    }
+
+    .home_frontend {
+        font-size: clamp(34px, 10vw, 48px);
+        gap: 4px;
+        margin-top: -8px;
+        flex-wrap: wrap;
+    }
+
+    .home_frontend h1 {
+        font-size: inherit;
+    }
+
+    .home_2D {
+        font-size: 14px;
+        gap: 8px;
+        margin-top: 0;
+        flex-wrap: wrap;
+    }
+
+    h4 {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+
+    /* POST-IT Y FOTOGRAFÍA */
+
+    .home_imag {
+        position: relative;
+        width: min(65%, 220px);
+        margin: 35px auto 20px;
+        left: auto;
+        right: auto;
+    }
+
+    .home_img_angela {
+        position: absolute;
+        width: 53%;
+        left: auto;
+        right: -10px;
+        bottom: -10px;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        padding: 20px 15px;
+    }
+
+    .footer_block {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer_logo_white {
+        width: 90px;
+    }
+
+    .links {
+        align-items: center;
+    }
+
+    .footer_foot_first_r {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .link_mail {
+        justify-content: center;
+        text-align: center;
+    }
+}
