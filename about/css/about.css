@@ -198,6 +198,8 @@ h1 {
 .about_contents_link_arrow {
     display: flex;
     gap: 20px;
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .about_link_mail {
@@ -210,6 +212,7 @@ h1 {
     width: 500px;
     height: 600px;
 }
+
 
 /*===================FOOTER=================================*/
 .footer {
